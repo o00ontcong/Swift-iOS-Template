@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		486E3834216076770076B4A1 /* UnifiedTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E3833216076770076B4A1 /* UnifiedTabBarViewController.swift */; };
+		486E3835216076770076B4A1 /* UnifiedTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E3833216076770076B4A1 /* UnifiedTabBarViewController.swift */; };
+		486E3836216076770076B4A1 /* UnifiedTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E3833216076770076B4A1 /* UnifiedTabBarViewController.swift */; };
+		486E3839216076FA0076B4A1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E3838216076FA0076B4A1 /* BaseViewController.swift */; };
+		486E383A216076FA0076B4A1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E3838216076FA0076B4A1 /* BaseViewController.swift */; };
+		486E383B216076FA0076B4A1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E3838216076FA0076B4A1 /* BaseViewController.swift */; };
+		486E383D2160783E0076B4A1 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E383C2160783E0076B4A1 /* BaseNavigationController.swift */; };
+		486E383E2160783E0076B4A1 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E383C2160783E0076B4A1 /* BaseNavigationController.swift */; };
+		486E383F2160783E0076B4A1 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E383C2160783E0076B4A1 /* BaseNavigationController.swift */; };
+		486E384121607A670076B4A1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E384021607A670076B4A1 /* Constants.swift */; };
+		486E384221607A670076B4A1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E384021607A670076B4A1 /* Constants.swift */; };
+		486E384321607A670076B4A1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E384021607A670076B4A1 /* Constants.swift */; };
+		486E384621607E810076B4A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E384521607E810076B4A1 /* HomeViewController.swift */; };
+		486E384721607E810076B4A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E384521607E810076B4A1 /* HomeViewController.swift */; };
+		486E384821607E810076B4A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E384521607E810076B4A1 /* HomeViewController.swift */; };
+		486E384A216082940076B4A1 /* LeftSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E3849216082940076B4A1 /* LeftSliderViewController.swift */; };
+		486E384B216082940076B4A1 /* LeftSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E3849216082940076B4A1 /* LeftSliderViewController.swift */; };
+		486E384C216082940076B4A1 /* LeftSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E3849216082940076B4A1 /* LeftSliderViewController.swift */; };
 		48B033E6215E118100E96A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B033E5215E118100E96A6E /* AppDelegate.swift */; };
 		48B033E8215E118100E96A6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B033E7215E118100E96A6E /* ViewController.swift */; };
 		48B033EB215E118100E96A6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B033E9215E118100E96A6E /* Main.storyboard */; };
@@ -175,9 +193,18 @@
 		48B03590215E26C800E96A6E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B0358C215E26C800E96A6E /* LoginViewController.xib */; };
 		48B03591215E26C800E96A6E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B0358C215E26C800E96A6E /* LoginViewController.xib */; };
 		48B03592215E26C800E96A6E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B0358C215E26C800E96A6E /* LoginViewController.xib */; };
+		48C1B291216109C8007B4B21 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1B290216109C8007B4B21 /* WalletViewController.swift */; };
+		48C1B292216109C8007B4B21 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1B290216109C8007B4B21 /* WalletViewController.swift */; };
+		48C1B293216109C8007B4B21 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1B290216109C8007B4B21 /* WalletViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		486E3833216076770076B4A1 /* UnifiedTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedTabBarViewController.swift; sourceTree = "<group>"; };
+		486E3838216076FA0076B4A1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		486E383C2160783E0076B4A1 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		486E384021607A670076B4A1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		486E384521607E810076B4A1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		486E3849216082940076B4A1 /* LeftSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSliderViewController.swift; sourceTree = "<group>"; };
 		48B033E2215E118000E96A6E /* Swift-iOS-Template DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-iOS-Template DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B033E5215E118100E96A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48B033E7215E118100E96A6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -292,6 +319,7 @@
 		48B034EF215E1FD200E96A6E /* KSReachability-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KSReachability-Prefix.pch"; sourceTree = "<group>"; };
 		48B0358B215E26C800E96A6E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		48B0358C215E26C800E96A6E /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		48C1B290216109C8007B4B21 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +347,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		486E3832216076110076B4A1 /* RootControllers */ = {
+			isa = PBXGroup;
+			children = (
+				486E3833216076770076B4A1 /* UnifiedTabBarViewController.swift */,
+				486E3849216082940076B4A1 /* LeftSliderViewController.swift */,
+			);
+			path = RootControllers;
+			sourceTree = "<group>";
+		};
+		486E3837216076E50076B4A1 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				486E3838216076FA0076B4A1 /* BaseViewController.swift */,
+				486E383C2160783E0076B4A1 /* BaseNavigationController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		486E384421607E720076B4A1 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				486E384521607E810076B4A1 /* HomeViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
 		48B033D9215E118000E96A6E = {
 			isa = PBXGroup;
 			children = (
@@ -368,6 +422,7 @@
 			isa = PBXGroup;
 			children = (
 				48B03426215E1EC800E96A6E /* Helper.swift */,
+				486E384021607A670076B4A1 /* Constants.swift */,
 			);
 			path = AppDefine;
 			sourceTree = "<group>";
@@ -399,6 +454,10 @@
 		48B03425215E1C9100E96A6E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				48C1B28F216109B2007B4B21 /* WalletViewController */,
+				486E384421607E720076B4A1 /* HomeViewController */,
+				486E3837216076E50076B4A1 /* BaseViewController */,
+				486E3832216076110076B4A1 /* RootControllers */,
 				48B03589215E268B00E96A6E /* Authentication */,
 			);
 			path = ViewController;
@@ -567,6 +626,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		48C1B28F216109B2007B4B21 /* WalletViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48C1B290216109C8007B4B21 /* WalletViewController.swift */,
+			);
+			path = WalletViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -706,9 +773,11 @@
 			files = (
 				48B03535215E1FD200E96A6E /* AFURLRequestSerialization.m in Sources */,
 				48B0357D215E1FD200E96A6E /* UIButton+WebCache.m in Sources */,
+				486E384621607E810076B4A1 /* HomeViewController.swift in Sources */,
 				48B03505215E1FD200E96A6E /* IFTTTAnimator.m in Sources */,
 				48B03547215E1FD200E96A6E /* LGSideMenuController.m in Sources */,
 				48B034F0215E1FD200E96A6E /* Utility.m in Sources */,
+				486E3839216076FA0076B4A1 /* BaseViewController.swift in Sources */,
 				48B03520215E1FD200E96A6E /* IFTTTAnimatedScrollViewController.m in Sources */,
 				48B0354A215E1FD200E96A6E /* LGSideMenuGesturesHandler.m in Sources */,
 				48B03517215E1FD200E96A6E /* IFTTTHideAnimation.m in Sources */,
@@ -721,6 +790,7 @@
 				48B03565215E1FD200E96A6E /* UIImage+GIF.m in Sources */,
 				48B0355C215E1FD200E96A6E /* SDWebImageDecoder.m in Sources */,
 				48B03538215E1FD200E96A6E /* AFNetworkReachabilityManager.m in Sources */,
+				486E383D2160783E0076B4A1 /* BaseNavigationController.swift in Sources */,
 				48B0351D215E1FD200E96A6E /* IFTTTScaleAnimation.m in Sources */,
 				48B03553215E1FD200E96A6E /* UIImage+WebP.m in Sources */,
 				48B03556215E1FD200E96A6E /* MKAnnotationView+WebCache.m in Sources */,
@@ -732,14 +802,17 @@
 				48B03511215E1FD200E96A6E /* IFTTTEasingFunction.m in Sources */,
 				48B0356B215E1FD200E96A6E /* SDWebImageCompat.m in Sources */,
 				48B0352F215E1FD200E96A6E /* AFHTTPSessionManager.m in Sources */,
+				486E3834216076770076B4A1 /* UnifiedTabBarViewController.swift in Sources */,
 				48B0350B215E1FD200E96A6E /* IFTTTAlphaAnimation.m in Sources */,
 				48B033E6215E118100E96A6E /* AppDelegate.swift in Sources */,
 				48B03544215E1FD200E96A6E /* LGSideMenuSegue.m in Sources */,
 				48B034FF215E1FD200E96A6E /* IFTTTAnimationFrame.m in Sources */,
 				48B0351A215E1FD200E96A6E /* IFTTTAnimation.m in Sources */,
+				48C1B291216109C8007B4B21 /* WalletViewController.swift in Sources */,
 				48B0350E215E1FD200E96A6E /* IFTTTConstraintsAnimation.m in Sources */,
 				48B0357A215E1FD200E96A6E /* UIImageView+WebCache.m in Sources */,
 				48B0353B215E1FD200E96A6E /* AFSecurityPolicy.m in Sources */,
+				486E384121607A670076B4A1 /* Constants.swift in Sources */,
 				48B03523215E1FD200E96A6E /* IFTTTTransform3DAnimation.m in Sources */,
 				48B03502215E1FD200E96A6E /* IFTTTAngleAnimation.m in Sources */,
 				48B03568215E1FD200E96A6E /* UIImage+MultiFormat.m in Sources */,
@@ -749,6 +822,7 @@
 				48B0356E215E1FD200E96A6E /* SDWebImagePrefetcher.m in Sources */,
 				48B03526215E1FD200E96A6E /* IFTTTFrameAnimation.m in Sources */,
 				48B03550215E1FD200E96A6E /* LGSideMenuBorderView.m in Sources */,
+				486E384A216082940076B4A1 /* LeftSliderViewController.swift in Sources */,
 				48B0352C215E1FD200E96A6E /* AFURLResponseSerialization.m in Sources */,
 				48B0353E215E1FD200E96A6E /* LGSideMenuHelper.m in Sources */,
 				48B0355F215E1FD200E96A6E /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -765,9 +839,11 @@
 			files = (
 				48B03536215E1FD200E96A6E /* AFURLRequestSerialization.m in Sources */,
 				48B0357E215E1FD200E96A6E /* UIButton+WebCache.m in Sources */,
+				486E384721607E810076B4A1 /* HomeViewController.swift in Sources */,
 				48B03506215E1FD200E96A6E /* IFTTTAnimator.m in Sources */,
 				48B03548215E1FD200E96A6E /* LGSideMenuController.m in Sources */,
 				48B034F1215E1FD200E96A6E /* Utility.m in Sources */,
+				486E383A216076FA0076B4A1 /* BaseViewController.swift in Sources */,
 				48B03521215E1FD200E96A6E /* IFTTTAnimatedScrollViewController.m in Sources */,
 				48B0354B215E1FD200E96A6E /* LGSideMenuGesturesHandler.m in Sources */,
 				48B03518215E1FD200E96A6E /* IFTTTHideAnimation.m in Sources */,
@@ -780,6 +856,7 @@
 				48B03566215E1FD200E96A6E /* UIImage+GIF.m in Sources */,
 				48B0355D215E1FD200E96A6E /* SDWebImageDecoder.m in Sources */,
 				48B03539215E1FD200E96A6E /* AFNetworkReachabilityManager.m in Sources */,
+				486E383E2160783E0076B4A1 /* BaseNavigationController.swift in Sources */,
 				48B0351E215E1FD200E96A6E /* IFTTTScaleAnimation.m in Sources */,
 				48B03554215E1FD200E96A6E /* UIImage+WebP.m in Sources */,
 				48B03557215E1FD200E96A6E /* MKAnnotationView+WebCache.m in Sources */,
@@ -791,14 +868,17 @@
 				48B03512215E1FD200E96A6E /* IFTTTEasingFunction.m in Sources */,
 				48B0356C215E1FD200E96A6E /* SDWebImageCompat.m in Sources */,
 				48B03530215E1FD200E96A6E /* AFHTTPSessionManager.m in Sources */,
+				486E3835216076770076B4A1 /* UnifiedTabBarViewController.swift in Sources */,
 				48B0350C215E1FD200E96A6E /* IFTTTAlphaAnimation.m in Sources */,
 				48B033FA215E129A00E96A6E /* AppDelegate.swift in Sources */,
 				48B03545215E1FD200E96A6E /* LGSideMenuSegue.m in Sources */,
 				48B03500215E1FD200E96A6E /* IFTTTAnimationFrame.m in Sources */,
 				48B0351B215E1FD200E96A6E /* IFTTTAnimation.m in Sources */,
+				48C1B292216109C8007B4B21 /* WalletViewController.swift in Sources */,
 				48B0350F215E1FD200E96A6E /* IFTTTConstraintsAnimation.m in Sources */,
 				48B0357B215E1FD200E96A6E /* UIImageView+WebCache.m in Sources */,
 				48B0353C215E1FD200E96A6E /* AFSecurityPolicy.m in Sources */,
+				486E384221607A670076B4A1 /* Constants.swift in Sources */,
 				48B03524215E1FD200E96A6E /* IFTTTTransform3DAnimation.m in Sources */,
 				48B03503215E1FD200E96A6E /* IFTTTAngleAnimation.m in Sources */,
 				48B03569215E1FD200E96A6E /* UIImage+MultiFormat.m in Sources */,
@@ -808,6 +888,7 @@
 				48B0356F215E1FD200E96A6E /* SDWebImagePrefetcher.m in Sources */,
 				48B03527215E1FD200E96A6E /* IFTTTFrameAnimation.m in Sources */,
 				48B03551215E1FD200E96A6E /* LGSideMenuBorderView.m in Sources */,
+				486E384B216082940076B4A1 /* LeftSliderViewController.swift in Sources */,
 				48B0352D215E1FD200E96A6E /* AFURLResponseSerialization.m in Sources */,
 				48B0353F215E1FD200E96A6E /* LGSideMenuHelper.m in Sources */,
 				48B03560215E1FD200E96A6E /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -824,9 +905,11 @@
 			files = (
 				48B03537215E1FD200E96A6E /* AFURLRequestSerialization.m in Sources */,
 				48B0357F215E1FD200E96A6E /* UIButton+WebCache.m in Sources */,
+				486E384821607E810076B4A1 /* HomeViewController.swift in Sources */,
 				48B03507215E1FD200E96A6E /* IFTTTAnimator.m in Sources */,
 				48B03549215E1FD200E96A6E /* LGSideMenuController.m in Sources */,
 				48B034F2215E1FD200E96A6E /* Utility.m in Sources */,
+				486E383B216076FA0076B4A1 /* BaseViewController.swift in Sources */,
 				48B03522215E1FD200E96A6E /* IFTTTAnimatedScrollViewController.m in Sources */,
 				48B0354C215E1FD200E96A6E /* LGSideMenuGesturesHandler.m in Sources */,
 				48B03519215E1FD200E96A6E /* IFTTTHideAnimation.m in Sources */,
@@ -839,6 +922,7 @@
 				48B03567215E1FD200E96A6E /* UIImage+GIF.m in Sources */,
 				48B0355E215E1FD200E96A6E /* SDWebImageDecoder.m in Sources */,
 				48B0353A215E1FD200E96A6E /* AFNetworkReachabilityManager.m in Sources */,
+				486E383F2160783E0076B4A1 /* BaseNavigationController.swift in Sources */,
 				48B0351F215E1FD200E96A6E /* IFTTTScaleAnimation.m in Sources */,
 				48B03555215E1FD200E96A6E /* UIImage+WebP.m in Sources */,
 				48B03558215E1FD200E96A6E /* MKAnnotationView+WebCache.m in Sources */,
@@ -850,14 +934,17 @@
 				48B03513215E1FD200E96A6E /* IFTTTEasingFunction.m in Sources */,
 				48B0356D215E1FD200E96A6E /* SDWebImageCompat.m in Sources */,
 				48B03531215E1FD200E96A6E /* AFHTTPSessionManager.m in Sources */,
+				486E3836216076770076B4A1 /* UnifiedTabBarViewController.swift in Sources */,
 				48B0350D215E1FD200E96A6E /* IFTTTAlphaAnimation.m in Sources */,
 				48B03408215E12B300E96A6E /* AppDelegate.swift in Sources */,
 				48B03546215E1FD200E96A6E /* LGSideMenuSegue.m in Sources */,
 				48B03501215E1FD200E96A6E /* IFTTTAnimationFrame.m in Sources */,
 				48B0351C215E1FD200E96A6E /* IFTTTAnimation.m in Sources */,
+				48C1B293216109C8007B4B21 /* WalletViewController.swift in Sources */,
 				48B03510215E1FD200E96A6E /* IFTTTConstraintsAnimation.m in Sources */,
 				48B0357C215E1FD200E96A6E /* UIImageView+WebCache.m in Sources */,
 				48B0353D215E1FD200E96A6E /* AFSecurityPolicy.m in Sources */,
+				486E384321607A670076B4A1 /* Constants.swift in Sources */,
 				48B03525215E1FD200E96A6E /* IFTTTTransform3DAnimation.m in Sources */,
 				48B03504215E1FD200E96A6E /* IFTTTAngleAnimation.m in Sources */,
 				48B0356A215E1FD200E96A6E /* UIImage+MultiFormat.m in Sources */,
@@ -867,6 +954,7 @@
 				48B03570215E1FD200E96A6E /* SDWebImagePrefetcher.m in Sources */,
 				48B03528215E1FD200E96A6E /* IFTTTFrameAnimation.m in Sources */,
 				48B03552215E1FD200E96A6E /* LGSideMenuBorderView.m in Sources */,
+				486E384C216082940076B4A1 /* LeftSliderViewController.swift in Sources */,
 				48B0352E215E1FD200E96A6E /* AFURLResponseSerialization.m in Sources */,
 				48B03540215E1FD200E96A6E /* LGSideMenuHelper.m in Sources */,
 				48B03561215E1FD200E96A6E /* UIImageView+HighlightedWebCache.m in Sources */,

@@ -26,7 +26,9 @@ class LoginViewController: UIViewController {
     }
     
     //MARK: - IBActions
-    @IBAction func actionSave(_ sender: Any) {
+    @IBAction func actionLogin(_ sender: Any) {
+        Utility.registerKey(PROJECT_SESSIONKEY, withValue: "")
+        Helper.authenticationChange()
     }
     //MARK: - Public
     func publicMethod() {

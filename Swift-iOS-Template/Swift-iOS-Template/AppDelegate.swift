@@ -12,13 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var leftVC : LeftSliderViewController!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.registerNotification()
         self.checkUserAuthentication()
-
+        application.isStatusBarHidden = false
+        application.statusBarStyle = .lightContent
 
         return true
     }
@@ -45,11 +47,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    func checkUserAuthentication() {
+    @objc func checkUserAuthentication() {
         if Helper.isCheckAuthentication() {
-            self.window?.rootViewController = nil
-            
+
+            window?.rootViewController = nil
+            let unifiedController = UnifiedTabBarViewController()
+            leftVC = LeftSliderViewController()
+            leftVC.delegate = unifiedController
+            let sideMenuController = LGSideMenuController(rootViewController: unifiedController, leftViewController: leftVC, rightViewController: nil)
+            sideMenuController.leftViewWidth = Constants.LEFT_SLIDER_VIEW_WIDTH
+            sideMenuController.leftViewPresentationStyle = .slideAbove
+            sideMenuController.delegate = leftVC
+            sideMenuController.isLeftViewSwipeGestureEnabled = false
+            window?.rootViewController = sideMenuController
             self.window?.makeKeyAndVisible()
+
         } else {
             UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
             UINavigationBar.appearance().shadowImage = UIImage()
@@ -60,5 +72,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         }
     }
+    func registerNotification() {
+        
+        let notificationSettings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+        UIApplication.shared.registerUserNotificationSettings(notificationSettings)
+        UIApplication.shared.registerForRemoteNotifications()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.checkUserAuthentication), name: NSNotification.Name(rawValue: AUTHENTICATION_CHANGE), object: nil)
+        
+    }
+
 }
 
