@@ -81,13 +81,25 @@ class APIManager: NSObject {
         self.call(pathString, setAction: action, setParams: params, isToken: true, tag: "", setDelegate: delegateRef)
     }
     
-    func mock(_ pathString: String?, setAction action: String?, setParams params: [AnyHashable : Any]?, isToken: Bool, tag: String?, setDelegate delegateRef: APIManagerDelegate?) {
-    }
-    
-    func mock(_ pathString: String?, setAction action: String?, setParams params: [AnyHashable : Any]?, tag: String?, setDelegate delegateRef: APIManagerDelegate?) {
-    }
-    
-    func mock(_ pathString: String?, setAction action: String?, setParams params: [AnyHashable : Any]?, setDelegate delegateRef: APIManagerDelegate?) {
-    }
+    func mock(_ pathString: APIRouter, setAction action: HTTPMethod, setParams params: [String : String]?, isToken: Bool, tag: String?, setDelegate delegateRef: APIManagerDelegate?) {
+        self.delegate = delegateRef;
 
+        let str = pathString.path.components(separatedBy: "/").last
+        let filePath = Bundle.main.path(forResource: str, ofType: "json")
+        let dataParse = NSData(contentsOfFile: filePath ?? "") as Data?
+        var json: [String : AnyObject]? = nil
+        if let aParse = dataParse {
+            json = try! JSONSerialization.jsonObject(with: aParse, options: []) as? [String : AnyObject]
+        }
+        self.delegate.apiManager(pathString, setParams: params, tag: tag, completed: json )
+
+    }
+    
+    func mock(_ pathString: APIRouter, setAction action: HTTPMethod, setParams params: [String : String]?, tag: String?, setDelegate delegateRef: APIManagerDelegate?) {
+        self.mock(pathString, setAction: action, setParams: params, isToken: true, tag: tag, setDelegate: delegateRef)
+        
+    }
+    func mock(_ pathString: APIRouter, setAction action: HTTPMethod, setParams params: [String : String]?, setDelegate delegateRef: APIManagerDelegate?) {
+        self.mock(pathString, setAction: action, setParams: params, isToken: true, tag: "", setDelegate: delegateRef)
+    }
 }

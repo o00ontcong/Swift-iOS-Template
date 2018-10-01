@@ -31,7 +31,7 @@ class LoginViewController: BaseViewController, APIManagerDelegate{
         params["username"] = "viettel12_giaovien01"
         params["password"] = "12345678aA@"
         
-        // Call by singleton
+//        // Call by singleton
 //        APIManager.sharedInstance.call(APIRouter.Login,
 //                                       setAction: .post,
 //                                       setParams: params,
@@ -39,9 +39,19 @@ class LoginViewController: BaseViewController, APIManagerDelegate{
 //                                       tag: nil,
 //                                       setDelegate: self)
         
-        //Call by instance
+//        //Call by instance
+//        let manager = APIManager()
+//        manager.call(APIRouter.Login,
+//                     setAction: .post,
+//                     setParams: params,
+//                     isToken: false,
+//                     tag: nil,
+//                     setDelegate: self)
+        
+        
+        // Call by
         let manager = APIManager()
-        manager.call(APIRouter.Login,
+        manager.mock(APIRouter.Login,
                      setAction: .post,
                      setParams: params,
                      isToken: false,

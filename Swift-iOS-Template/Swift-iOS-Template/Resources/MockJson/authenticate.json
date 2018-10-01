@@ -1,0 +1,9 @@
+{
+    "error_code": null,
+    "error_message": null,
+    "success": true,
+    "token": "4b984be3-d2a1-4174-8abc-67d6cc9dff75",
+    "failed_password_attemp_count": 0,
+    "max_failed_password_attemp_count": 0,
+    "user_id": 860526
+}

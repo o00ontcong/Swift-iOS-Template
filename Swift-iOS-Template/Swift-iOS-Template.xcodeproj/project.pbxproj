@@ -11,6 +11,9 @@
 		4838B0D42161FAE600CFF897 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4838B0D32161FAE600CFF897 /* UserInfo.swift */; };
 		4838B0D52161FAE600CFF897 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4838B0D32161FAE600CFF897 /* UserInfo.swift */; };
 		4838B0D62161FAE600CFF897 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4838B0D32161FAE600CFF897 /* UserInfo.swift */; };
+		4838B19A21620D8500CFF897 /* authenticate.json in Resources */ = {isa = PBXBuildFile; fileRef = 4838B19921620D8500CFF897 /* authenticate.json */; };
+		4838B19B21620D8500CFF897 /* authenticate.json in Resources */ = {isa = PBXBuildFile; fileRef = 4838B19921620D8500CFF897 /* authenticate.json */; };
+		4838B19C21620D8500CFF897 /* authenticate.json in Resources */ = {isa = PBXBuildFile; fileRef = 4838B19921620D8500CFF897 /* authenticate.json */; };
 		486E3834216076770076B4A1 /* UnifiedTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E3833216076770076B4A1 /* UnifiedTabBarViewController.swift */; };
 		486E3835216076770076B4A1 /* UnifiedTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E3833216076770076B4A1 /* UnifiedTabBarViewController.swift */; };
 		486E3836216076770076B4A1 /* UnifiedTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E3833216076770076B4A1 /* UnifiedTabBarViewController.swift */; };
@@ -197,6 +200,7 @@
 		1BCE2AA408781AEC632D8F67 /* Pods_Swift_iOS_Template_STAGING.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_iOS_Template_STAGING.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4838B0D32161FAE600CFF897 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		4838B0D72161FBD900CFF897 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4838B19921620D8500CFF897 /* authenticate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = authenticate.json; sourceTree = "<group>"; };
 		486E3833216076770076B4A1 /* UnifiedTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedTabBarViewController.swift; sourceTree = "<group>"; };
 		486E3838216076FA0076B4A1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		486E383C2160783E0076B4A1 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
@@ -356,6 +360,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4838B19821620D7300CFF897 /* MockJson */ = {
+			isa = PBXGroup;
+			children = (
+				4838B19921620D8500CFF897 /* authenticate.json */,
+			);
+			path = MockJson;
+			sourceTree = "<group>";
+		};
 		486E3832216076110076B4A1 /* RootControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,6 +463,7 @@
 		48B03423215E1C8200E96A6E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4838B19821620D7300CFF897 /* MockJson */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -747,6 +760,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B03590215E26C800E96A6E /* LoginViewController.xib in Resources */,
+				4838B19A21620D8500CFF897 /* authenticate.json in Resources */,
 				48B033F0215E118200E96A6E /* LaunchScreen.storyboard in Resources */,
 				48B033ED215E118200E96A6E /* Assets.xcassets in Resources */,
 				48B033EB215E118100E96A6E /* Main.storyboard in Resources */,
@@ -758,6 +772,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B03591215E26C800E96A6E /* LoginViewController.xib in Resources */,
+				4838B19B21620D8500CFF897 /* authenticate.json in Resources */,
 				48B033FD215E129A00E96A6E /* LaunchScreen.storyboard in Resources */,
 				48B033FE215E129A00E96A6E /* Assets.xcassets in Resources */,
 				48B033FF215E129A00E96A6E /* Main.storyboard in Resources */,
@@ -769,6 +784,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B03592215E26C800E96A6E /* LoginViewController.xib in Resources */,
+				4838B19C21620D8500CFF897 /* authenticate.json in Resources */,
 				48B0340B215E12B300E96A6E /* LaunchScreen.storyboard in Resources */,
 				48B0340C215E12B300E96A6E /* Assets.xcassets in Resources */,
 				48B0340D215E12B300E96A6E /* Main.storyboard in Resources */,
