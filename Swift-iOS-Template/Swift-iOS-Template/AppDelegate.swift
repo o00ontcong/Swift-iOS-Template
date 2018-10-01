@@ -48,7 +48,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     @objc func checkUserAuthentication() {
-        if Helper.isCheckAuthentication() {
+       
+        if  Utility.isCheckAuthentication() {
 
             window?.rootViewController = nil
             let unifiedController = UnifiedTabBarViewController()

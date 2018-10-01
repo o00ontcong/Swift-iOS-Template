@@ -46,7 +46,8 @@ typedef NS_OPTIONS(NSInteger, ComfortViewType) {
 };
 
 @interface Utility : NSObject
-
++(BOOL)isCheckAuthentication;
++(void)authenticationChange;
 + (UIFont*)primaryFont:(float)_size;
 + (UIFont*)primaryFontBold:(float)_size;
 + (UIFont*)fontCalibri:(float)_size;

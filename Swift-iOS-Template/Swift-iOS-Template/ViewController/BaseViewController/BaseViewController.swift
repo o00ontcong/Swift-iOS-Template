@@ -15,19 +15,8 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
-    //MARK: - Custom Accessors
-    func configureView() {
-        
-    }
-    
-    //MARK: - IBActions
-    @IBAction func actionSave(_ sender: Any) {
-    }
+
+
     //MARK: - Public
     func alert(withTitle title: String?, andMessage message: String?) {
         present(Utility.alertC(title, message: message), animated: true)
@@ -54,13 +43,9 @@ class BaseViewController: UIViewController {
         self.loadingIndicator?.hide(true)
     }
     
-    //MARK: - Private
-    func privateMethod() {
-        
-    }
-    
-    //MARK: - Protocol conformance
-    
-    //MARK: -  Call API
 
+    //MARK: -  Call API
+    func apiManager(_ path: APIRouter?, setParams params: [String : String]?, tag: String?, error: NSError?) {
+        self.alert(withTitle: "Thông báo", andMessage: error?.localizedDescription)
+    }
 }

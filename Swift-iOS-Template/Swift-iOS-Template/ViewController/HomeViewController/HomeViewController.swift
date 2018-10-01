@@ -8,13 +8,21 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController, APIManagerDelegate{
+
+    
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.leftBarButtonItem = burgerIcon()
-
+        var paramsProfile = [String:String]()
+        paramsProfile["date"] = "13/4/2018"
+        paramsProfile["user_id"] = "860526"
+        APIManager.sharedInstance.call(APIRouter.Profile,
+                                       setAction: .post,
+                                       setParams: paramsProfile,
+                                       setDelegate: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,5 +51,15 @@ class HomeViewController: UIViewController {
     //MARK: - Protocol conformance
     
     //MARK: -  Call API
+    func apiManager(_ path: APIRouter, setParams params: [String : String]?, tag: String?, completed JSON: [String : AnyObject]?) {
+        switch path {
+        case .Profile:
+            print(JSON)
+
+            break
+        default:
+            break
+        }
+    }
 
 }

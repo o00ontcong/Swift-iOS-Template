@@ -12,7 +12,15 @@
 #import <sys/utsname.h>
 #import "Reachability.h"
 @implementation Utility
-
++(BOOL)isCheckAuthentication{
+    return [self checkKeyIdentifier:PROJECT_SESSIONKEY];
+}
++(BOOL)checkKeyIdentifier:(NSString *)identifier{
+    return [[UYLPasswordManager sharedInstance] validKey:nil forIdentifier:identifier];
+}
++(void)authenticationChange{
+    [[NSNotificationCenter defaultCenter] postNotificationName:AUTHENTICATION_CHANGE object:nil];
+}
 + (UIImage *)setTintColor:(UIColor *)color forImage:(UIImage *)image
 {
     UIImage *newImage = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
@@ -176,9 +184,6 @@
     return [self checkKeyIdentifier:@"SESSIONKEY"];
 }
 
-+(BOOL)checkKeyIdentifier:(NSString *)identifier{
-    return [[UYLPasswordManager sharedInstance] validKey:nil forIdentifier:identifier];
-}
 
 +(BOOL)registerKey:(NSString *)identifier withValue:(NSString *)value{
     value = [self parseString:value];

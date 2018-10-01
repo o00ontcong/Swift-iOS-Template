@@ -15,16 +15,6 @@ class Helper: NSObject {
         }
         return Static.instance
     }
-    
-    class public func isCheckAuthentication() -> Bool{
-        return self.checkKeyIdentifier(identifier: PROJECT_SESSIONKEY)
-    }
-    class public func checkKeyIdentifier(identifier: String ) -> Bool {
-        return UYLPasswordManager.sharedInstance().validKey(nil, forIdentifier: identifier)
-    }
-    
-    class public func authenticationChange(){
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: AUTHENTICATION_CHANGE), object: nil)
-    }
+    var userInfo = UserInfo()
     
 }

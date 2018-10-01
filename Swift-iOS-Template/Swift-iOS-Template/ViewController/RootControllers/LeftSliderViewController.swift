@@ -46,7 +46,7 @@ class LeftSliderViewController: UIViewController ,LGSideMenuDelegate{
     //MARK: - IBActions
     @IBAction func actionLogOut(_ sender: Any) {
         Utility.deleteKey(PROJECT_SESSIONKEY)
-        Helper.authenticationChange()
+        Utility.authenticationChange()
 
     }
     @IBAction func actionProfile(_ sender: Any) {
