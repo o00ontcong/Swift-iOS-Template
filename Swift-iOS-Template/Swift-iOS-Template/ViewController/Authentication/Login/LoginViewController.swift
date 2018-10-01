@@ -30,12 +30,23 @@ class LoginViewController: BaseViewController, APIManagerDelegate{
         var params = [String:String]()
         params["username"] = "viettel12_giaovien01"
         params["password"] = "12345678aA@"
-        APIManager.sharedInstance.call(APIRouter.Login,
-                                       setAction: .post,
-                                       setParams: params,
-                                       isToken: false,
-                                       tag: nil,
-                                       setDelegate: self)
+        
+        // Call by singleton
+//        APIManager.sharedInstance.call(APIRouter.Login,
+//                                       setAction: .post,
+//                                       setParams: params,
+//                                       isToken: false,
+//                                       tag: nil,
+//                                       setDelegate: self)
+        
+        //Call by instance
+        let manager = APIManager()
+        manager.call(APIRouter.Login,
+                     setAction: .post,
+                     setParams: params,
+                     isToken: false,
+                     tag: nil,
+                     setDelegate: self)
         
     }
     //MARK: - Public
